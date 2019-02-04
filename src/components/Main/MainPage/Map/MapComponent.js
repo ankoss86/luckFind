@@ -22,3 +22,5 @@ const MyMapComponent = compose(
     ));
 
   export default MyMapComponent;
+//   AIzaSyC8fNAn2hv0crW8DcHSxEqzBQsRZn7D3z0
+// AIzaSyDurZQBXjtSzKeieXwtFeGe-jhZu-HEGQU

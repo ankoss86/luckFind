@@ -19,26 +19,30 @@ export class UserPanel extends Component {
 
   handlerChandeLocal = local => {
     localStorage.setItem('local', `${local}`);
-    this.props.setLocal(local)
+    this.props.setLocal(local);
+    let path = this.props.location.pathname.split('/');
+    path[1] = local;
+    let str = path.join('/');
+    this.props.history.push(str);
+    document.location.reload(true);    
   }  
 
   render() {
-
+    
     const { local } = this.state;    
 
-    return ( local &&
+    return (
       <div className='header_userPanel'>
           <div className='header_logo'>
             {window.location.pathname === '/' 
           ? <img className='logo_img' src={logo} alt='logo'/> 
-          : <NavLink path to={`/${local}`}><img onClick={this.props.redirect} className='logo_img' src={logo} alt='logo'/></NavLink>
+          : <NavLink path to={`/${local}/`}><img onClick={this.props.redirect} className='logo_img' src={logo} alt='logo'/></NavLink>
             }              
           </div>
           <div className='user_panel'>
               <span className='uaButton' onClick={()=>this.handlerChandeLocal('ua')} >ua</span>
               <span className='ruButton' onClick={()=>this.handlerChandeLocal('ru')} >ru</span>
-              <span className='enButton' onClick={()=>this.handlerChandeLocal('en')} >en</span>   
-              <p>{this.props.local}</p>        
+              <span className='enButton' onClick={()=>this.handlerChandeLocal('en')} >en</span>
           </div>        
       </div>
     )

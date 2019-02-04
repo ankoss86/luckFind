@@ -18,18 +18,18 @@ const setLocalReducer = (state = initialLocalState, action) => {
     }
 }
 
-// const initialLocalJsonState = {
-//     localJson: null,
-// }
+const initialLocalJsonState = {
+    localJson: null,
+}
 
-// const putJsonToStorReducer = (state = initialLocalJsonState, action) => {
-//     switch (action.type) {
-//         case actionTypes.ADD_LOCAL_JSON_TO_STOR:
-//             return action.payload;    
-//         default:
-//             return state;
-//     }
-// }
+const putJsonToStorReducer = (state = initialLocalJsonState, action) => {
+    switch (action.type) {
+        case actionTypes.ADD_LOCAL_JSON_TO_STOR:
+            return action.payload;    
+        default:
+            return state;
+    }
+}
 
 //redirect reducer
 const initialRedirectState = {
@@ -49,7 +49,7 @@ const redirectReducer = (state = initialRedirectState, action) => {
 
 const rootReducer = combineReducers({   
     local: setLocalReducer,
-    // localJson: putJsonToStorReducer,
+    localJson: putJsonToStorReducer,
     redirect: redirectReducer,
 });
 
