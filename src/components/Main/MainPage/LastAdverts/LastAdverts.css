@@ -1,0 +1,49 @@
+
+.lastAdverts_component {
+    padding-bottom: 20px;
+    padding-left: 30px;
+}
+
+/* slider */
+.sliderTitle {
+    color: #5e686e;
+}
+
+.advertLostItemInSlide, .advertFindItemInSlide {
+    position: relative;
+    border-radius: 5px;
+    max-width: 210px;
+    height: 320px;
+    border: 1px solid #ced1d3;    
+    margin-right: 40px;
+}
+
+.advertLostItemInSlide {
+    border-top: 3px solid #e77817;
+}
+
+.advertFindItemInSlide {
+    border-top: 3px solid #00923f;
+}
+
+.lostMarker, .findMarker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-transform: uppercase;
+    position: absolute;
+    top: 180px;
+    left: -10px;
+    height: 30px;
+    width: 130px;
+    border-radius: 5px;
+}
+
+.lostMarker {
+    background: #e77817;
+}
+
+.findMarker {
+    background: #00923f;
+}

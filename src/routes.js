@@ -1,0 +1,11 @@
+export const ADD_LOST = '/addLost';
+export const ADD_FIND = '/addFind';
+export const ABOUT = '/about';
+export const FINDS = '/finds'; 
+export const LOSSES = '/losses';
+export const BLOG = '/blog'; 
+export const FAQ = '/faq'; 
+export const CONTACTS = '/contacts'; 
+export const HOW_IT_WORKS = '/how-it-works'; 
+export const NEWS = '/news';
+export const WORK = '/work'; 

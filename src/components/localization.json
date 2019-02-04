@@ -1,0 +1,41 @@
+{
+    "ua": {
+        "header": {
+            "findButton" : "додати знахідку",
+            "lostButton" : "додати втрату",
+            "headerPlaceholder" : "пошук сайтом..."
+        },
+        "main": {
+
+        },
+        "footer": {
+
+        }
+    },
+    "ru": {
+        "header": {
+            "findButton" : "я нашел",
+            "lostButton" : "я потерял",
+            "headerPlaceholder" : "поиск по сайту..."
+        },
+        "main": {
+
+        },
+        "footer": {
+
+        }
+    },
+    "en": {
+        "header": {
+            "findButton" : "add find",
+            "lostButton" : "add loss",
+            "headerPlaceholder" : "search on the site..."
+        },
+        "main": {
+
+        },
+        "footer": {
+
+        }
+    }    
+}

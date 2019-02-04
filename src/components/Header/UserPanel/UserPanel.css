@@ -1,0 +1,27 @@
+.header_userPanel {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.header_logo {
+    width: calc(50% + 53px);
+}
+
+.user_panel {
+    min-width: 250px;
+    border: 1px solid;
+    justify-self: flex-end;
+}
+
+.ruButton , .enButton, .uaButton {
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.logo_img {
+    display: block;
+    margin-left: auto;
+    width: 106px;
+    height: 106px;
+}
