@@ -1,12 +1,12 @@
 import * as actionTypes from './types';
 
 //localization actions
-// export const setLocal = (payload) => {
-//     return {
-//         type: actionTypes.SET_LOCAL,
-//         payload: payload
-//     }
-// }
+export const setLocal = (payload) => {
+    return {
+        type: actionTypes.SET_LOCAL,
+        payload: payload
+    }
+}
 
 // export const putLocalJsonToStore = (payload) => {
 //     return {

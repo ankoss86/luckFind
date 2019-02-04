@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom'
 
 //actions
+import { setLocal } from '../actions/index';
 
 //components
 import Header from './Header/Header';
@@ -17,6 +18,19 @@ class App extends React.Component {
     localJson: require('./localization.json')
   }
 
+  componentDidMount(){
+    let local = localStorage.getItem('local');
+    if(local === null){
+      localStorage.setItem('local', 'ua');
+      local = localStorage.getItem('local');
+    }     
+    if(this.props.history.location.pathname === '/'){
+      this.props.history.push(`/${local}/`);
+    }
+    
+    this.props.setLocal(local)
+  }
+
   render() {  
     return (      
         <div className="App">
@@ -28,4 +42,4 @@ class App extends React.Component {
   }
 }
 
-export default withRouter(connect(null, {})(App));
+export default withRouter(connect(null, { setLocal })(App));

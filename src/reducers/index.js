@@ -3,18 +3,20 @@ import { combineReducers } from 'redux';
 
 
 //localization reducers
-// const initialLocalState = {
-//     local: 'ua',
-// }
+const initialLocalState = {
+    local: null,
+}
 
-// const setLocalReducer = (state = initialLocalState, action) => {
-//     switch (action.type) {
-//         case actionTypes.SET_LOCAL:            
-//             return action.payload;              
-//         default:
-//             return state;
-//     }
-// }
+const setLocalReducer = (state = initialLocalState, action) => {
+    switch (action.type) {
+        case actionTypes.SET_LOCAL:            
+            return {
+                local: action.payload
+                }              
+        default:
+            return state;
+    }
+}
 
 // const initialLocalJsonState = {
 //     localJson: null,
@@ -46,7 +48,7 @@ const redirectReducer = (state = initialRedirectState, action) => {
 }
 
 const rootReducer = combineReducers({   
-    // local: setLocalReducer,
+    local: setLocalReducer,
     // localJson: putJsonToStorReducer,
     redirect: redirectReducer,
 });

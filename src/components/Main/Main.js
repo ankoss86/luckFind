@@ -27,7 +27,6 @@ export class Main extends Component {
 
     state = {
         redirect: this.props.redirect,
-        local: this.props.local
     }
 
   render() {
@@ -37,7 +36,7 @@ export class Main extends Component {
     return (
         <Switch>
             {/* <Route exact path='/' component={MainPage}/> */}
-            <Route exact path='/' component={MainPage}/>
+            <Route exact path='/:local/' component={MainPage}/>
             <Route path={routes.ADD_FIND} component={AddFind}/>
             <Route path={routes.ADD_LOST} component={AddLost}/>
             <Route path={routes.ABOUT} component={About}/>
