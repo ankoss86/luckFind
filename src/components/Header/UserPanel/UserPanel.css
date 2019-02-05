@@ -9,14 +9,21 @@
 }
 
 .user_panel {
-    min-width: 250px;
-    border: 1px solid;
-    justify-self: flex-end;
+    display: flex;
+    align-items: center;
 }
 
 .ruButton , .enButton, .uaButton {
     cursor: pointer;
-    margin-left: 10px;
+    color: #7d8589;
+}
+
+.activ {
+    color: #e77817;
+}
+
+.enButton {
+    margin-right: 15px;
 }
 
 .logo_img {
@@ -24,4 +31,29 @@
     margin-left: auto;
     width: 106px;
     height: 106px;
+}
+
+.uaButton, .ruButton, .enButton {
+    display: block;
+    margin-right: 5px;
+}
+
+.faceBook_logIn {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 39px;
+    height: 39px;
+    background: #7d8589;
+    border-radius: 50%;
+}
+
+.faceBook_logIn:hover .fa-facebook-f {
+    color: #e77817;
+}
+
+.fa-facebook-f {
+    color: #fff;
+    font-size: 25px;
 }

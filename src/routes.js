@@ -9,3 +9,4 @@ export const CONTACTS = '/:local/contacts';
 export const HOW_IT_WORKS = '/:local/how-it-works'; 
 export const NEWS = '/:local/news';
 export const WORK = '/:local/work'; 
+export const ADVERT = '/:local/advert/:id';

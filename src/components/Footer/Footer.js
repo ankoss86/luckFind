@@ -7,29 +7,30 @@ import './Footer.css';
 export class Footer extends Component {
 
   state = {
-    local: this.props.local
+    local: this.props.local,
+    content: this.props.content.footer
   }
 
   render() {
 
-    let { local } = this.state;
+    let { local, content } = this.state;
 
     return (
       <div className='footer'>
         <div className='footer_items'>
-          <NavLink onClick={this.props.redirect} className='nav_item' to={`/${local}/about`}>О проекте</NavLink>
-          <NavLink onClick={this.props.redirect} className='nav_item' to={`/${local}/finds`}>Находки</NavLink>
-          <NavLink onClick={this.props.redirect} className='nav_item' to={`/${local}/losses`}>Потери</NavLink>
-          <NavLink onClick={this.props.redirect} className='nav_item' to={`/${local}/blog`}>Блог</NavLink>
-          <NavLink onClick={this.props.redirect} className='nav_item' to={`/${local}/faq`}>ЧАВО</NavLink>
-          <NavLink onClick={this.props.redirect} className='nav_item' to={`/${local}/contacts`}>Контакты</NavLink>
-          <NavLink onClick={this.props.redirect} className='nav_item' to={`/${local}/how-it-works`}>Как это работает</NavLink>
-          <NavLink onClick={this.props.redirect} className='nav_item' to={`/${local}/news`}>Новости сервиса</NavLink>
-          <NavLink onClick={this.props.redirect} className='nav_item' to={`/${local}/work`}>Вакансии</NavLink>
+          <NavLink onClick={this.props.redirect} className='nav_item' to={`/${local}/about`}>{content.about}</NavLink>
+          <NavLink onClick={this.props.redirect} className='nav_item' to={`/${local}/finds`}>{content.finds}</NavLink>
+          <NavLink onClick={this.props.redirect} className='nav_item' to={`/${local}/losses`}>{content.losses}</NavLink>
+          <NavLink onClick={this.props.redirect} className='nav_item' to={`/${local}/blog`}>{content.blog}</NavLink>
+          <NavLink onClick={this.props.redirect} className='nav_item' to={`/${local}/faq`}>{content.faq}</NavLink>
+          <NavLink onClick={this.props.redirect} className='nav_item' to={`/${local}/contacts`}>{content.contacts}</NavLink>
+          <NavLink onClick={this.props.redirect} className='nav_item' to={`/${local}/how-it-works`}>{content.howItWork}</NavLink>
+          <NavLink onClick={this.props.redirect} className='nav_item' to={`/${local}/news`}>{content.news}</NavLink>
+          <NavLink onClick={this.props.redirect} className='nav_item' to={`/${local}/work`}>{content.work}</NavLink>
         </div>
         <div className='community'>
           <div className='social_links'>
-            <span className='our_comunmunity'>Наши сообщества:</span>
+            <span className='our_comunmunity'>{content.community}</span>
             <span className='fb_icon'><a href='https://www.facebook.com/luckfind.me/'><i class="fb_icon_awesome fab fa-facebook-square"></i></a></span>
           </div>
           <div className='social_buttons'>
@@ -49,7 +50,8 @@ export class Footer extends Component {
 
 const MSTP = state => {
   return {
-    local: state.local.local
+    local: state.local.local,
+    content: state.localJson
   }
 }
 

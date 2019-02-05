@@ -1,41 +1,92 @@
 {
     "ua": {
         "header": {
-            "findButton" : "додати знахідку",
-            "lostButton" : "додати втрату",
-            "headerPlaceholder" : "пошук сайтом..."
+            "searchPanel" : {
+                "findButton" : "додати знахідку",
+                "lostButton" : "додати втрату",
+                "headerPlaceholder" : "пошук сайтом..."
+            }
         },
         "main": {
+            "mainPage" : {
+                "lastAdverts" : "Останні оголошення:",
+                "lostMarker" : "Знахідка",
+                "findMarker" : "Втрата",
+                "showMap" : "Показати карту"
+            }
 
         },
         "footer": {
-
+            "about" : "Про проект",
+            "finds" : "Знахідки",
+            "losses" : "Втрати",
+            "blog" : "Блог",
+            "faq" : "Часті запитання (FAQ)",
+            "contacts" : "контакти",
+            "howItWork" : "Як це працює",
+            "news" : "Новини сервісу",
+            "work" : "Вакансії",
+            "community" : "Наші спільноти:"            
         }
     },
     "ru": {
         "header": {
-            "findButton" : "я нашел",
-            "lostButton" : "я потерял",
-            "headerPlaceholder" : "поиск по сайту..."
+            "searchPanel" : {
+                "findButton" : "я нашел",
+                "lostButton" : "я потерял",
+                "headerPlaceholder" : "поиск по сайту..."
+            }
         },
         "main": {
+            "mainPage" : {
+                "lastAdverts" : "Последние объявления:",
+                "lostMarker" : "Находка",
+                "findMarker" : "Пропажа",
+                "showMap" : "Показать карту"
+            }
 
         },
         "footer": {
-
+            "about" : "О проекте",
+            "finds" : "Находки",
+            "losses" : "Потери",
+            "blog" : "Блог",
+            "faq" : "Частые вопросы (ЧАВО)",
+            "contacts" : "Контакты",
+            "howItWork" : "Как это работает",
+            "news" : "Новости сервиса",
+            "work" : "Вакансии",
+            "community" : "Наши сообщества:"
         }
     },
     "en": {
         "header": {
-            "findButton" : "add find",
-            "lostButton" : "add loss",
-            "headerPlaceholder" : "search on the site..."
+            "searchPanel" : {
+                "findButton" : "add find",
+                "lostButton" : "add loss",
+                "headerPlaceholder" : "search on the site..."
+            }
         },
         "main": {
+            "mainPage" : {
+                "lastAdverts" : "Latest adverts:",
+                "lostMarker" : "Lost",
+                "findMarker" : "Found",
+                "showMap" : "Show map"
+            }
 
         },
         "footer": {
-
+            "about" : "About",
+            "finds" : "Finds",
+            "losses" : "Losses",
+            "blog" : "Blog",
+            "faq" : "FAQ",
+            "contacts" : "Contacts",
+            "howItWork" : "How it work",
+            "news" : "News",
+            "work" : "Vacancy",
+            "community" : "Our social community:"
         }
     }    
 }

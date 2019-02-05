@@ -10,7 +10,7 @@ export class AddSearchPanel extends Component {
 
 state = {
     local: this.props.local.local,
-    content: this.props.content.header
+    content: this.props.content.header.searchPanel
 }
 
   render() {

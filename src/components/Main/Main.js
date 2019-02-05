@@ -22,6 +22,7 @@ import Contacts from '../Footer/Contacts/Contacts';
 import HowItWorks from '../Footer/HowItWorks/HowItWorks';
 import News from '../Footer/News/News';
 import Work from '../Footer/Work/Work';
+import AdvertFoolInfo from './AdvertFoolInfo/AdvertFoolInfo';
 
 export class Main extends Component {
 
@@ -48,6 +49,7 @@ export class Main extends Component {
             <Route path={routes.HOW_IT_WORKS} component={HowItWorks}/>
             <Route path={routes.NEWS} component={News}/>
             <Route path={routes.WORK} component={Work}/>
+            <Route path={routes.ADVERT} component={AdvertFoolInfo}/>
         </Switch>            
     )
   }

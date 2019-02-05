@@ -10,7 +10,7 @@ import { redirect, setLocal } from '../../../actions/index';
 export class UserPanel extends Component {
 
   state = {
-    local: '',
+    local: this.props.local,
   }
 
   componentWillReceiveProps(nextProps){
@@ -30,7 +30,7 @@ export class UserPanel extends Component {
   render() {
     
     const { local } = this.state;    
-
+    console.log(local)
     return (
       <div className='header_userPanel'>
           <div className='header_logo'>
@@ -40,9 +40,10 @@ export class UserPanel extends Component {
             }              
           </div>
           <div className='user_panel'>
-              <span className='uaButton' onClick={()=>this.handlerChandeLocal('ua')} >ua</span>
-              <span className='ruButton' onClick={()=>this.handlerChandeLocal('ru')} >ru</span>
-              <span className='enButton' onClick={()=>this.handlerChandeLocal('en')} >en</span>
+              <span className={local === 'ua' ? 'uaButton activ' : 'uaButton'} onClick={()=>this.handlerChandeLocal('ua')} >ua</span>
+              <span className={local === 'ru' ? 'ruButton activ' : 'ruButton'} onClick={()=>this.handlerChandeLocal('ru')} >ru</span>
+              <span className={local === 'en' ? 'enButton activ' : 'enButton'} onClick={()=>this.handlerChandeLocal('en')} >en</span>
+              <span className='faceBook_logIn'><i class="fab fa-facebook-f"></i></span>
           </div>        
       </div>
     )

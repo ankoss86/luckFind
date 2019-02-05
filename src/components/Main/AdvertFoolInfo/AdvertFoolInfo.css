@@ -1,0 +1,76 @@
+.foolInfo_component {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.itemAdressGreen {
+    margin-bottom: 25px;
+    width: 100%;
+    background:  rgba(0, 146, 63, 0.356);
+}
+
+.itemAdressOrange {
+    margin-bottom: 25px;
+    width: 100%;
+    background: #e7781742;
+}
+
+.itemAdress_greenText {
+    font-weight: medium;
+    color: #00923f;
+    font-size: 16px;
+}
+
+.itemAdress_orangeText {
+    font-weight: medium;
+    color: #e77817;
+    font-size: 16px;
+}
+
+.foolInfo_content {
+    height: 452px;
+    border: 1px solid;
+    width: 950px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.foolInfoMap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.foolInfo_map {
+    width: 510px;
+    height: 270px;
+}
+
+.foolInfo_communication {
+    padding-top: 12px;
+    width: 950px;
+    border: 1px solid;
+}
+
+.foolInfo_communication__orangeButton {
+    text-transform: uppercase;
+    padding: 12px;
+    background: #e77817;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.foolInfo_communication__greenButton {
+    text-transform: uppercase;
+    padding: 12px;
+    background: #00923f;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.foolInf0_communication__form {
+    border: 1px solid;
+    height: 145px
+}

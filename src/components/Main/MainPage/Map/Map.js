@@ -6,7 +6,8 @@ export class MapContainer extends Component {
 
 state = {
   currenPosition: null,
-  showMap: false
+  showMap: false,
+  content: this.props.content.showMap
 }
 
 componentDidMount() {
@@ -27,12 +28,12 @@ showMap = () => {
 
   render() {
 
-    const { showMap } = this.state;
+    const { showMap, content } = this.state;
 
     return (
       <div className='map_component'>
       <div className={showMap ? 'showMap' : 'map_wraper'}>
-        <span onClick={this.showMap} className='pulse'>показать карту</span>
+        <span onClick={this.showMap} className='pulse'>{content}</span>
         
       </div>
       {this.state.currenPosition && <MyMapComponent center={this.state.currenPosition}/>}

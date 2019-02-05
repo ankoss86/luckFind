@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import './Main.css'
 
 //components
@@ -9,11 +10,17 @@ export class MainPage extends Component {
   render() {
     return (
       <div className='main_panel'>
-        <MapContainer />
-        <LastAdverts />
+        <MapContainer content={this.props.content.main.mainPage}/>
+        <LastAdverts content={this.props.content.main.mainPage}/>
       </div>
     )
   }
 }
 
-export default MainPage
+const MSTP = state => {
+  return {
+    content: state.localJson
+  }
+}
+
+export default connect(MSTP)(MainPage)
